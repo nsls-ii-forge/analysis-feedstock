@@ -26,7 +26,7 @@ requirements:
     # - datamuxer  # this was discussed via slack to remove
     - distributed
     - fabio
-    - ffmpeg >=4.0
+    - ffmpeg >=4.0  # [not win]
     - flake8
     - graphviz
     - grid-strategy
