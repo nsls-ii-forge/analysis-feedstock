@@ -1,0 +1,55 @@
+{% set year = "2019" %}
+{% set cycle = "3" %}
+{% set version = "1rc1" %}
+
+package:
+  name: analysis
+  version: {{ year }}C{{ cycle }}.{{ version }}
+
+build:
+  number: 0
+
+requirements:
+  run:
+    - amostra  # [py3k]
+    - attrs >=18.0
+    - bluesky >=1.6.0rc1  # [py3k]
+    - bluesky-browser
+    - bluesky-kafka  # [py3k]
+    - controls-doctor
+    - dask
+    - databroker >=0.13.0
+    - datamuxer
+    - distributed
+    - fabio
+    - ffmpeg
+    - ffmpeg >=4.0
+    - flake8
+    - graphviz
+    - grid-strategy
+    - h5py >=2.9.0
+    - intake-bluesky
+    - ipykernel
+    - ipympl==0.1.1
+    - ipython
+    - ipywidgets==7.2.1
+    - jupyter
+    - matplotlib >=3.1.0
+    - numpy >=1.14.0
+    - openpyxl
+    - ophyd >=1.4.0rc1
+    - oscars
+    - peakutils
+    - pyfftw
+    - pymongo >=3.7
+    - pyqt >=5.6.0
+    - python >=3.7.0
+    - python-graphviz
+    - qt >=5.6.0
+    - scikit-beam
+    - sympy
+    - tornado <5.0.0
+    - tzlocal >=1.5
+    - xlrd
+    - xlwt
+    - xray-vision
