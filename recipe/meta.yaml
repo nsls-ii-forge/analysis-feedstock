@@ -16,13 +16,12 @@ requirements:
     - bluesky >=1.6.0rc1  # [py3k]
     - bluesky-browser
     - bluesky-kafka  # [py3k]
-    - controls-doctor
+    # - controls-doctor  # this was discussed via slack to remove
     - dask
     - databroker >=0.13.0
-    - datamuxer
+    # - datamuxer  # this was discussed via slack to remove
     - distributed
     - fabio
-    - ffmpeg
     - ffmpeg >=4.0
     - flake8
     - graphviz
@@ -53,3 +52,12 @@ requirements:
     - xlrd
     - xlwt
     - xray-vision
+
+about:
+  home: https://nsls-ii.github.io/deployment_docs.html
+  license: BSD 3-Clause
+  license_file: LICENSE
+  summary: Analysis metapackage for NSLS-II deployments
+  description: |
+    Analysis metapackage for NSLS-II deployments. See the deployment
+    documentation at https://nsls-ii.github.io/deployment_docs.html.
