@@ -71,7 +71,7 @@ test:
     - pymongo
     - skbeam
     - xray_vision
-    - intake_bluesky
+    - intake_bluesky
   commands:
     - python -V
     - ipython -V
