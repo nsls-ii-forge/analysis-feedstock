@@ -9,7 +9,7 @@ package:
 
 build:
   skip: True  # [py<36]
-  number: 1
+  number: 2
 
 requirements:
   host:
@@ -20,10 +20,8 @@ requirements:
     - bluesky >=1.5.5
     - bluesky-browser
     - bluesky-kafka
-    # - controls-doctor  # this was discussed via slack to remove
     - dask
     - databroker >=0.13.0
-    # - datamuxer  # this was discussed via slack to remove
     - distributed
     - fabio
     - ffmpeg >=4.0  # [not win]
@@ -56,6 +54,27 @@ requirements:
     - xlrd
     - xlwt
     - xray-vision
+
+test:
+  imports:
+    - bluesky
+    - bluesky_browser
+    - dask
+    - databroker
+    - event_model
+    - lmfit
+    - matplotlib
+    - numpy
+    - ophyd
+    - oscars
+    - peakutils
+    - pymongo
+    - skbeam
+    - xray_vision
+    - intake_bluesky
+  commands:
+    - python -V
+    - ipython -V
 
 about:
   home: https://nsls-ii.github.io/deployment_docs.html
