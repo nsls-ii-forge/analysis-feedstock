@@ -64,13 +64,14 @@ test:
     - event_model
     - intake_bluesky
     - lmfit
+    - matplotlib  # [not linux]
     - numpy
     - ophyd
     - oscars
     - peakutils
     - pymongo
     - skbeam
-    - xray_vision
+    - xray_vision  # [not linux]
   commands:
     - python -V
     - ipython -V
