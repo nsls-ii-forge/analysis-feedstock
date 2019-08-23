@@ -23,6 +23,7 @@ requirements:
     - dask
     - databroker >=0.13.0
     - distributed
+    - epics-base
     - fabio
     - ffmpeg >=4.0  # [not win]
     - flake8
