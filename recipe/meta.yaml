@@ -62,8 +62,8 @@ test:
     - dask
     - databroker
     - event_model
+    - intake_bluesky
     - lmfit
-    - matplotlib
     - numpy
     - ophyd
     - oscars
@@ -71,7 +71,6 @@ test:
     - pymongo
     - skbeam
     - xray_vision
-    - intake_bluesky
   commands:
     - python -V
     - ipython -V
