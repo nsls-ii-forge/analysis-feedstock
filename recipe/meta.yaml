@@ -9,7 +9,7 @@ package:
 
 build:
   skip: True  # [py<36]
-  number: 2
+  number: 3
 
 requirements:
   host:
@@ -65,14 +65,14 @@ test:
     - event_model
     - intake_bluesky
     - lmfit
-    - matplotlib  # [not linux]
+    - matplotlib
     - numpy
     - ophyd
     - oscars
     - peakutils
     - pymongo
     - skbeam
-    - xray_vision  # [not linux]
+    - xray_vision
   commands:
     - python -V
     - ipython -V
