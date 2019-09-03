@@ -16,7 +16,7 @@ requirements:
   host:
     - python
   run:
-    - amostra
+    - amostra <=1.0
     - attrs >=18.0
     - bluesky >=1.5.5,<1.6
     - bluesky-browser
@@ -50,6 +50,14 @@ requirements:
     - python-graphviz
     - qt >=5.6.0
     - scikit-beam >=0.0.18
+    - suitcase-csv
+    - suitcase-json-metadata
+    - suitcase-jsonl
+    - suitcase-mongo
+    - suitcase-msgpack
+    - suitcase-specfile
+    - suitcase-tiff
+    - suitcase-utils
     - sympy
     - tornado <5.0.0
     - tzlocal >=1.5
@@ -73,6 +81,16 @@ test:
     - peakutils
     - pymongo
     - skbeam
+    - suitcase.csv
+    - suitcase.json_metadata
+    - suitcase.jsonl
+    - suitcase.mongo_embedded
+    - suitcase.mongo_normalized
+    - suitcase.msgpack
+    - suitcase.specfile
+    - suitcase.tiff_series
+    - suitcase.tiff_stack
+    - suitcase.utils
     - xray_vision
   commands:
     - python -V
