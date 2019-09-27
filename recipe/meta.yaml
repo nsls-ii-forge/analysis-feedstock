@@ -16,6 +16,7 @@ requirements:
   host:
     - python
   run:
+    - python
     - amostra <=1.0
     - attrs >=18.0
     - bluesky >=1.5.5,<1.6rc
@@ -47,7 +48,6 @@ requirements:
     - pyfftw
     - pymongo >=3.7
     - pyqt >=5.6.0
-    - python
     - python-graphviz
     - qt >=5.6.0
     - scikit-beam >=0.0.18
