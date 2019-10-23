@@ -32,7 +32,6 @@ requirements:
     - graphviz
     - grid-strategy
     - h5py >=2.9.0
-    - intake-bluesky
     - ipykernel
     - ipympl==0.1.1
     - ipython
