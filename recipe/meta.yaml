@@ -72,7 +72,6 @@ test:
     - dask
     - databroker
     - event_model
-    - intake_bluesky
     - lmfit
     - matplotlib
     - numpy
