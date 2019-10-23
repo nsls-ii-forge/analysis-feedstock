@@ -19,11 +19,11 @@ requirements:
     - python
     - amostra <=1.0
     - attrs >=18.0
-    - bluesky >=1.6rc
+    - bluesky >=1.6.0rc3
     - bluesky-browser
     - bluesky-kafka
     - dask
-    - databroker >=1.0rc
+    - databroker >=1.0.0b2
     - distributed
     - event-model >=1.11.2
     - fabio
@@ -40,7 +40,7 @@ requirements:
     - matplotlib >=3.1.0
     - numpy >=1.14.0
     - openpyxl
-    - ophyd >=1.4rc
+    - ophyd >=1.4.0rc3
     - oscars
     - peakutils
     - pyepics >=3.4.0
@@ -59,7 +59,7 @@ requirements:
     - suitcase-tiff
     - suitcase-utils
     - sympy
-    - tornado >=5
+    - tornado
     - tzlocal >=1.5
     - xlrd
     - xlwt
