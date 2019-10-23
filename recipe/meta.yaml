@@ -60,7 +60,7 @@ requirements:
     - suitcase-tiff
     - suitcase-utils
     - sympy
-    - tornado
+    - tornado >=5
     - tzlocal >=1.5
     - xlrd
     - xlwt
