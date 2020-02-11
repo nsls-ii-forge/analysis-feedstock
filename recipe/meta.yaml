@@ -23,7 +23,7 @@ requirements:
     - bluesky-browser
     - bluesky-kafka
     - dask
-    - databroker <1.0.0b
+    - databroker <1.0.0a
     - distributed
     - event-model >=1.13.2
     - fabio
