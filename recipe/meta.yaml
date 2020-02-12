@@ -10,7 +10,7 @@ package:
 
 build:
   skip: True  # [py<36]
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -20,7 +20,6 @@ requirements:
     - amostra <=1.0
     - attrs >=18.0
     - bluesky <1.6.0rc
-    - bluesky-browser
     - bluesky-kafka
     - dask
     - databroker <1.0.0a
@@ -68,7 +67,6 @@ requirements:
 test:
   imports:
     - bluesky
-    - bluesky_browser
     - dask
     - databroker
     - event_model
