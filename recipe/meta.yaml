@@ -19,7 +19,7 @@ requirements:
     - python
     - amostra <=1.0
     - attrs >=18.0
-    - bluesky <1.6.0rc
+    - bluesky >=1.6.0rc4
     - bluesky-kafka
     - dask
     - databroker <1.0.0a
@@ -92,7 +92,7 @@ test:
   commands:
     - python -V
     - ipython -V
-    - python -c "from distutils.version import LooseVersion; import bluesky; assert LooseVersion(bluesky.__version__) < '1.6'"
+    - python -c "from distutils.version import LooseVersion; import bluesky; assert LooseVersion(bluesky.__version__) >= '1.6'"
     - python -c "from distutils.version import LooseVersion; import databroker; assert LooseVersion(databroker.__version__) < '1.0'"
     - python -c "from distutils.version import LooseVersion; import ophyd; assert LooseVersion(ophyd.__version__) >= '1.4'"
 
