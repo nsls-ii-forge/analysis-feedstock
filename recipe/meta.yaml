@@ -2,11 +2,11 @@
 {% set year = "2020" %}
 {% set cycle = "1" %}
 {% set version = "0" %}
-{% set micro = "0rc0" %}
+{% set micro = "rc0" %}
 
 package:
   name: {{ name|lower }}
-  version: {{ year }}C{{ cycle }}.{{ version }}.{{ micro }}
+  version: {{ year }}C{{ cycle }}.{{ version }}{{ micro }}
 
 build:
   skip: True  # [py<36]
