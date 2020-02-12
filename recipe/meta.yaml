@@ -2,7 +2,7 @@
 {% set year = "2020" %}
 {% set cycle = "1" %}
 {% set version = "0" %}
-{% set micro = "rc0" %}
+{% set micro = "rc1" %}
 
 package:
   name: {{ name|lower }}
