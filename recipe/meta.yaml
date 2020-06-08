@@ -1,8 +1,8 @@
 {% set name = "analysis" %}
 {% set year = "2020" %}
-{% set cycle = "1" %}
+{% set cycle = "2" %}
 {% set version = "0" %}
-{% set micro = "rc2" %}
+{% set micro = "" %}
 
 package:
   name: {{ name|lower }}
@@ -20,12 +20,12 @@ requirements:
     - amostra <=1.0
     - attrs >=18.0
     - black
-    - bluesky >=1.6.0rc4
+    - bluesky >=1.6.0
     - bluesky-kafka
     - dask
-    - databroker <1.0.0a
+    - databroker >=1.0.0
     - distributed
-    - event-model >=1.13.2
+    - event-model >=1.15.1
     - fabio
     - ffmpeg >=4.0
     - flake8
@@ -41,16 +41,16 @@ requirements:
     - nexpy
     - numpy >=1.14.0
     - openpyxl
-    - ophyd >=1.4.0rc4
+    - ophyd >=1.4.0
     - oscars
     - peakutils
     - pyepics >=3.4.1
     - pyfftw
     - pymongo >=3.7
-    - pyqt >=5.6.0
+    - pyqt >=5.9.0
     - python-graphviz
     - qt >=5.6.0
-    - scikit-beam >=0.0.18
+    - scikit-beam >=0.0.21
     - suitcase-csv
     - suitcase-json-metadata
     - suitcase-jsonl
