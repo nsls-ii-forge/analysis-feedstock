@@ -70,7 +70,7 @@ requirements:
     - suitcase-utils
     - sympy
     - toml
-    - tomopy
+    - tomopy >=1.7
     - tornado
     - tqdm
     - tzlocal >=1.5
