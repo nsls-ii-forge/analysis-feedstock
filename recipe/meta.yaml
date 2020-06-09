@@ -70,7 +70,10 @@ requirements:
     - suitcase-utils
     - sympy
     - toml
-    - tomopy >=1.7
+    # Comment out tomopy for now, need to figure out what's wrong with the
+    # recipe as it tries to get the dependency packages from conda-forge.
+    # See https://dev.azure.com/nsls2forge/nsls2forge/_build/results?buildId=2661&view=logs&j=4f922444-fdfe-5dcf-b824-02f86439ef14&t=937c195f-508d-5135-dc9f-d4b5730df0f7
+    # - tomopy >=1.7
     - tornado
     - tqdm
     - tzlocal >=1.5
