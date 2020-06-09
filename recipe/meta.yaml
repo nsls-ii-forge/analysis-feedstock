@@ -18,6 +18,7 @@ requirements:
   run:
     - python
     - amostra <=1.0
+    - arvpyf
     - attrs >=18.0
     - black
     - bluesky >=1.6.0
@@ -37,20 +38,28 @@ requirements:
     - ipython
     - ipywidgets ==7.2.1
     - jupyter
+    - jupyterlab
+    - lmfit
+    - lxml
     - matplotlib >=3.1.0
+    - natsort
     - nexpy
+    - nodejs
     - numpy >=1.14.0
     - openpyxl
     - ophyd >=1.4.0
     - oscars
     - peakutils
-    - pyepics >=3.4.1
+    - pyepics >=3.4.2
     - pyfftw
     - pymongo >=3.7
+    - pypdf2
     - pyqt >=5.9.0
     - python-graphviz
     - qt >=5.6.0
+    - reportlab
     - scikit-beam >=0.0.21
+    - scipy
     - suitcase-csv
     - suitcase-json-metadata
     - suitcase-jsonl
@@ -60,11 +69,15 @@ requirements:
     - suitcase-tiff
     - suitcase-utils
     - sympy
+    - toml
+    - tomopy
     - tornado
+    - tqdm
     - tzlocal >=1.5
     - xlrd
     - xlwt
     - xray-vision
+    - xraylarch
 
 test:
   imports:
