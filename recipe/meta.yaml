@@ -121,6 +121,8 @@ test:
     - suitcase.utils
     - xray_vision
   commands:
+    # Fail if the "conda-forge" channel is in the list of channels.
+    - res=$(conda list --show-channel-url | grep "conda-forge"); if [ ! -z "$res" ]; then false; else true; fi  # [unix]
     - python -V
     - ipython -V
     - nexpy --help
