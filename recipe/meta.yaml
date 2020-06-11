@@ -96,6 +96,8 @@ requirements:
     - xraylarch
 
 test:
+  files:
+    - check_results.py
   imports:
     - bluesky
     - dask
@@ -122,13 +124,14 @@ test:
     - xray_vision
   commands:
     # Fail if the "conda-forge" channel is in the list of channels.
-    - 'res=$(conda list --show-channel-url | grep "conda-forge"); if [ ! -z "$res" ]; then false; else true; fi'  # [unix]
+    - python check_results.py
     - python -V
     - ipython -V
     - nexpy --help
     - python -c "from distutils.version import LooseVersion; import bluesky; assert LooseVersion(bluesky.__version__) >= '1.6'"
     - python -c "from distutils.version import LooseVersion; import databroker; assert LooseVersion(databroker.__version__) >= '1.0'"
     - python -c "from distutils.version import LooseVersion; import ophyd; assert LooseVersion(ophyd.__version__) >= '1.4'"
+
 
 about:
   home: https://nsls-ii.github.io/deployment_docs.html
