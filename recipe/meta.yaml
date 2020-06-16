@@ -34,7 +34,7 @@ requirements:
     - graphviz
     - grid-strategy
     - h5py >=2.8.0
-    - hdf5-lz4
+    - hdf5-lz4  # [not win]
     - ipykernel
     - ipympl ==0.1.1
     - ipython
