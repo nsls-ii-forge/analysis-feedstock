@@ -88,7 +88,7 @@ requirements:
     - suitcase-utils
     - sympy
     - toml
-    - tomopy >=1.7.1  # [linux]
+    - tomopy
     - tornado
     - tqdm
     - tzlocal >=1.5
