@@ -26,6 +26,7 @@ requirements:
     - boto3
     - dask
     - databroker >=1.0.0
+    - databroker-pack
     - distributed
     - event-model >=1.15.1
     - fabio
@@ -33,7 +34,7 @@ requirements:
     - flake8
     - graphviz
     - grid-strategy
-    - h5py >=2.8.0
+    - h5py >=2.9.0
     - hdf5-lz4  # [not win]
     - ipykernel
     - ipympl ==0.1.1
