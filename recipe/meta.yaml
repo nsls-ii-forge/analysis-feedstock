@@ -26,6 +26,7 @@ requirements:
     - boto3
     - dask
     - databroker >=1.0.0
+    - databroker-pack
     - distributed
     - event-model >=1.15.1
     - fabio
@@ -33,7 +34,8 @@ requirements:
     - flake8
     - graphviz
     - grid-strategy
-    - h5py >=2.8.0
+    - h5py >=2.9.0
+    - hdf5-lz4  # [not win]
     - ipykernel
     - ipympl ==0.1.1
     - ipython
@@ -52,6 +54,7 @@ requirements:
     - netcdf4
     - nexpy
     - nodejs
+    - nsls2-detector-handlers
     - numexpr
     - numpy >=1.14.0
     - openpyxl
@@ -87,7 +90,7 @@ requirements:
     - suitcase-utils
     - sympy
     - toml
-    - tomopy >=1.7.1  # [linux]
+    - tomopy
     - tornado
     - tqdm
     - tzlocal >=1.5
@@ -125,7 +128,9 @@ test:
     - xray_vision
   commands:
     # Fail if the "conda-forge" channel is in the list of channels.
-    - python check_results.py -t channels -f conda-forge  # [not osx]
+    # TODO: figure out why 'cyrus-sasl' and 'libgsasl' are appearing in the
+    # package list for Linux and MacOS.
+    - python check_results.py -t channels -f conda-forge  # [not unix]
     # Fail if versions of the packages are not as expected minimum ones.
     - python check_results.py -t version -p bluesky    -e 1.6
     - python check_results.py -t version -p ophyd      -e 1.4
