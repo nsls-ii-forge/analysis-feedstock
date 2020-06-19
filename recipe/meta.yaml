@@ -100,8 +100,8 @@ requirements:
     - xraylarch
 
 test:
-  files:
-    - check_results.py
+  requires:
+    - nsls2forge-utils
   imports:
     - bluesky
     - dask
@@ -130,11 +130,11 @@ test:
     # Fail if the "conda-forge" channel is in the list of channels.
     # TODO: figure out why 'cyrus-sasl' and 'libgsasl' are appearing in the
     # package list for Linux and MacOS.
-    - python check_results.py -t channels -f conda-forge  # [not unix]
+    - check-results -t channels -f conda-forge  # [not unix]
     # Fail if versions of the packages are not as expected minimum ones.
-    - python check_results.py -t version -p bluesky    -e 1.6
-    - python check_results.py -t version -p ophyd      -e 1.4
-    - python check_results.py -t version -p databroker -e 1.0
+    - check-results -t version -p bluesky    -e 1.6
+    - check-results -t version -p ophyd      -e 1.4
+    - check-results -t version -p databroker -e 1.0
     - python -V
     - ipython -V
     - nexpy --help
