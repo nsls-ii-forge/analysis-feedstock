@@ -10,7 +10,7 @@ package:
 
 build:
   skip: True  # [py<36]
-  number: 2
+  number: 3
 
 requirements:
   host:
@@ -18,6 +18,7 @@ requirements:
   run:
     - python
     - amostra <=1.0
+    - area-detector-handlers
     - arvpyf
     - attrs >=18.0
     - black
@@ -103,6 +104,7 @@ test:
   requires:
     - nsls2forge-utils
   imports:
+    - area_detector_handlers
     - bluesky
     - dask
     - databroker
@@ -114,6 +116,7 @@ test:
     - oscars
     - peakutils
     - pymongo
+    - pyxrf
     - skbeam
     - suitcase.csv
     - suitcase.json_metadata
