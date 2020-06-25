@@ -11,11 +11,11 @@ jobs:
       linux_python3.6:
         CONFIG: linux_python3.6
         UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+        DOCKER_IMAGE: nsls2/nsls2forge:latest
       linux_python3.7:
         CONFIG: linux_python3.7
         UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+        DOCKER_IMAGE: nsls2/nsls2forge:latest
     maxParallel: 8
   timeoutInMinutes: 360
 
