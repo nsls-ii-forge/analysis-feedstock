@@ -65,6 +65,7 @@ requirements:
     - papermill
     - peakutils
     - periodictable
+    - photutils
     - pycentroids  # [not win]
     - pyepics >=3.4.2
     - pyfai
