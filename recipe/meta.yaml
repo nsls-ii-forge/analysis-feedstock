@@ -10,7 +10,7 @@ package:
 
 build:
   skip: True  # [py<36]
-  number: 4
+  number: 5
 
 requirements:
   host:
@@ -82,6 +82,7 @@ requirements:
     - scikit-beam >=0.0.21
     - scikit-learn
     - scipy
+    - srw  # [linux]
     - suitcase-csv
     - suitcase-json-metadata
     - suitcase-jsonl
