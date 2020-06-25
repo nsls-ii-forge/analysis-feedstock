@@ -11,9 +11,11 @@ jobs:
       win_python3.6:
         CONFIG: win_python3.6
         UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: nsls2/nsls2forge:latest
       win_python3.7:
         CONFIG: win_python3.7
         UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: nsls2/nsls2forge:latest
     maxParallel: 4
   timeoutInMinutes: 360
   variables:

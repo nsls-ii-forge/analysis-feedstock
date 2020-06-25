@@ -10,7 +10,7 @@ package:
 
 build:
   skip: True  # [py<36]
-  number: 3
+  number: 4
 
 requirements:
   host:
@@ -25,6 +25,7 @@ requirements:
     - bluesky >=1.6.0
     - bluesky-kafka
     - boto3
+    - conda-pack
     - dask
     - databroker >=1.0.0
     - databroker-pack
@@ -131,9 +132,7 @@ test:
     - xray_vision
   commands:
     # Fail if the "conda-forge" channel is in the list of channels.
-    # TODO: figure out why 'cyrus-sasl' and 'libgsasl' are appearing in the
-    # package list for Linux and MacOS.
-    - check-results -t channels -f conda-forge  # [not unix]
+    - check-results -t channels -f conda-forge
     # Fail if versions of the packages are not as expected minimum ones.
     - check-results -t version -p bluesky    -e 1.6
     - check-results -t version -p ophyd      -e 1.4
