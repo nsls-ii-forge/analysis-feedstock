@@ -122,7 +122,7 @@ test:
     - pymongo
     - pyxrf
     - skbeam
-    - srwlpy
+    - srwlpy  # [linux]
     - suitcase.csv
     - suitcase.json_metadata
     - suitcase.jsonl
