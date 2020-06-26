@@ -10,7 +10,7 @@ package:
 
 build:
   skip: True  # [py<36]
-  number: 4
+  number: 5
 
 requirements:
   host:
@@ -23,7 +23,7 @@ requirements:
     - attrs >=18.0
     - black
     - bluesky >=1.6.0
-    - bluesky-kafka
+    - bluesky-kafka  # [not win]
     - boto3
     - conda-pack
     - dask
@@ -65,6 +65,7 @@ requirements:
     - papermill
     - peakutils
     - periodictable
+    - photutils
     - pycentroids  # [not win]
     - pyepics >=3.4.2
     - pyfai
@@ -82,6 +83,7 @@ requirements:
     - scikit-beam >=0.0.21
     - scikit-learn
     - scipy
+    - srw  # [linux]
     - suitcase-csv
     - suitcase-json-metadata
     - suitcase-jsonl
@@ -116,9 +118,11 @@ test:
     - ophyd
     - oscars
     - peakutils
+    - photutils
     - pymongo
     - pyxrf
     - skbeam
+    - srwlpy  # [linux]
     - suitcase.csv
     - suitcase.json_metadata
     - suitcase.jsonl
