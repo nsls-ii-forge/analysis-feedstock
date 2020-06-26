@@ -23,7 +23,7 @@ requirements:
     - attrs >=18.0
     - black
     - bluesky >=1.6.0
-    - bluesky-kafka
+    - bluesky-kafka  # [not win]
     - boto3
     - conda-pack
     - dask
@@ -73,7 +73,7 @@ requirements:
     - pymongo >=3.7
     - pypdf2
     - pyqt >=5.9.0
-    - pystackreg  # [not win]
+    - pystackreg
     - python-graphviz
     - pyxrf >=0.0.28
     - pyzbar  # [not win]
@@ -118,7 +118,7 @@ test:
     - ophyd
     - oscars
     - peakutils
-    - photutils  # [not win]
+    - photutils
     - pymongo
     - pyxrf
     - skbeam
