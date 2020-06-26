@@ -118,9 +118,11 @@ test:
     - ophyd
     - oscars
     - peakutils
+    - photutils
     - pymongo
     - pyxrf
     - skbeam
+    - srwlpy
     - suitcase.csv
     - suitcase.json_metadata
     - suitcase.jsonl
