@@ -73,7 +73,7 @@ requirements:
     - pymongo >=3.7
     - pypdf2
     - pyqt >=5.9.0
-    - pystackreg
+    - pystackreg  # [not win]
     - python-graphviz
     - pyxrf >=0.0.28
     - pyzbar  # [not win]
@@ -118,7 +118,7 @@ test:
     - ophyd
     - oscars
     - peakutils
-    - photutils
+    - photutils  # [not win]
     - pymongo
     - pyxrf
     - skbeam
