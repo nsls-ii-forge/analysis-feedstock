@@ -75,7 +75,7 @@ requirements:
     - pyqt >=5.9.0
     - pystackreg
     - python-graphviz
-    - pyxrf >=0.0.28
+    - pyxrf >=0.0.30
     - pyzbar  # [not win]
     - qt >=5.9.0
     - reportlab
