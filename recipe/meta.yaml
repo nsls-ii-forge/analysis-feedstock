@@ -10,7 +10,7 @@ package:
 
 build:
   skip: True  # [py<36]
-  number: 5
+  number: 7
 
 requirements:
   host:
@@ -54,9 +54,9 @@ requirements:
     - modestimage
     - natsort
     - netcdf4
-    - nexpy
+    - nexpy >=0.12.6
     - nodejs
-    - nsls2-detector-handlers
+    - nsls2-detector-handlers >=0.0.2
     - numexpr
     - numpy >=1.14.0
     - openpyxl
@@ -75,7 +75,7 @@ requirements:
     - pyqt >=5.9.0
     - pystackreg
     - python-graphviz
-    - pyxrf >=0.0.28
+    - pyxrf >=0.0.31
     - pyzbar  # [not win]
     - qt >=5.9.0
     - reportlab

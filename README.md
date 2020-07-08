@@ -5,7 +5,7 @@ Home: https://nsls-ii.github.io/deployment_docs.html
 
 Package license: BSD 3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Analysis metapackage for NSLS-II deployments
 
