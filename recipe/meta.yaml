@@ -115,6 +115,7 @@ test:
     - event_model
     - lmfit
     - matplotlib
+    - napari
     - numpy
     - ophyd
     - oscars
@@ -145,6 +146,8 @@ test:
     - python -V
     - ipython -V
     - nexpy --help
+    - napari --help
+    - napari --version
 
 about:
   home: https://nsls-ii.github.io/deployment_docs.html
