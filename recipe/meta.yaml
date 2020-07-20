@@ -10,7 +10,7 @@ package:
 
 build:
   skip: True  # [py<36]
-  number: 7
+  number: 8
 
 requirements:
   host:
@@ -52,6 +52,7 @@ requirements:
     - memory_profiler
     - mendeleev
     - modestimage
+    - napari >=0.3.5
     - natsort
     - netcdf4
     - nexpy >=0.12.6
@@ -114,6 +115,7 @@ test:
     - event_model
     - lmfit
     - matplotlib
+    - napari
     - numpy
     - ophyd
     - oscars
@@ -144,6 +146,8 @@ test:
     - python -V
     - ipython -V
     - nexpy --help
+    - napari --help
+    - napari --version
 
 about:
   home: https://nsls-ii.github.io/deployment_docs.html
