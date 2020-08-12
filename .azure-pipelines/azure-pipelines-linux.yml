@@ -8,12 +8,12 @@ jobs:
     vmImage: ubuntu-16.04
   strategy:
     matrix:
-      linux_python3.6:
-        CONFIG: linux_python3.6
+      linux_64_python3.6:
+        CONFIG: linux_64_python3.6
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: nsls2/nsls2forge:latest
-      linux_python3.7:
-        CONFIG: linux_python3.7
+      linux_64_python3.7:
+        CONFIG: linux_64_python3.7
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: nsls2/nsls2forge:latest
     maxParallel: 8
