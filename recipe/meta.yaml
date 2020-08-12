@@ -10,7 +10,7 @@ package:
 
 build:
   skip: True  # [py<36]
-  number: 8
+  number: 9
 
 requirements:
   host:
@@ -22,15 +22,15 @@ requirements:
     - arvpyf
     - attrs >=18.0
     - black
-    - bluesky >=1.6.0
+    - bluesky >=1.6.5
     - bluesky-kafka  # [not win]
     - boto3
     - conda-pack
     - dask
-    - databroker >=1.0.0
+    - databroker >=1.0.6
     - databroker-pack
     - distributed
-    - event-model >=1.15.1
+    - event-model >=1.15.2
     - fabio
     - ffmpeg >=4.0
     - flake8
@@ -57,11 +57,10 @@ requirements:
     - netcdf4
     - nexpy >=0.12.6
     - nodejs
-    - nsls2-detector-handlers >=0.0.2
     - numexpr
     - numpy >=1.14.0
     - openpyxl
-    - ophyd >=1.4.0
+    - ophyd >=1.5.2
     - oscars
     - papermill
     - peakutils
@@ -141,8 +140,8 @@ test:
     - check-results -t channels -f conda-forge  # [not osx]
     # Fail if versions of the packages are not as expected minimum ones.
     - check-results -t version -p bluesky    -e 1.6
-    - check-results -t version -p ophyd      -e 1.4
     - check-results -t version -p databroker -e 1.0
+    - check-results -t version -p ophyd      -e 1.5
     - python -V
     - ipython -V
     - nexpy --help
