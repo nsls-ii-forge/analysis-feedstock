@@ -27,7 +27,7 @@ requirements:
     - boto3
     - conda-pack
     - dask
-    - databroker >=1.10.0
+    - databroker >=1.1.0
     - databroker-pack
     - distributed
     - event-model >=1.16.0
