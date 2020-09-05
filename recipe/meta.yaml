@@ -10,7 +10,7 @@ package:
 
 build:
   skip: True  # [py<36]
-  number: 10
+  number: 11
 
 requirements:
   host:
@@ -30,6 +30,7 @@ requirements:
     - databroker >=1.1.0
     - databroker-pack
     - distributed
+    - doi2bib
     - event-model >=1.16.0
     - fabio
     - ffmpeg >=4.0
