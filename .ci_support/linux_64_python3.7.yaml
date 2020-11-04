@@ -5,7 +5,7 @@ channel_targets:
 docker_image:
 - nsls2/nsls2forge:latest
 numpy:
-- '1.16'
+- '1.11'
 pin_run_as_build:
   python:
     min_pin: x.x
