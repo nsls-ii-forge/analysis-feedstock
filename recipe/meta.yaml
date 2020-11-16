@@ -82,7 +82,7 @@ requirements:
     - pyxrf >=1.0.0
     - pyzbar  # [not win]
     - qt >=5.9.0
-    - redis
+    - redis-py
     - reportlab
     - requests
     - sasview
@@ -130,6 +130,7 @@ test:
     - photutils
     - pymongo
     - pyxrf
+    - redis
     - skbeam
     - srwlpy  # [linux]
     - srwpy
