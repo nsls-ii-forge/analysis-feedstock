@@ -1,6 +1,6 @@
 {% set name = "analysis" %}
-{% set year = "2020" %}
-{% set cycle = "2" %}
+{% set year = "2021" %}
+{% set cycle = "1" %}
 {% set version = "0" %}
 {% set micro = "" %}
 
@@ -10,7 +10,7 @@ package:
 
 build:
   skip: True  # [py<36]
-  number: 13
+  number: 0
 
 requirements:
   host:
@@ -23,16 +23,17 @@ requirements:
     - arvpyf
     - attrs >=18.0
     - black
-    - bluesky >=1.6.6
+    - bluesky >=1.6.7
     - bluesky-kafka  # [not win]
+    - bluesky-live
     - boto3
     - conda-pack
     - dask
-    - databroker >=1.1.0
+    - databroker >=1.2.0
     - databroker-pack
     - distributed
     - doi2bib
-    - event-model >=1.16.0
+    - event-model >=1.17.0
     - fabio
     - ffmpeg >=4.0
     - flake8
@@ -63,7 +64,7 @@ requirements:
     - numexpr
     - numpy >=1.14.0
     - openpyxl
-    - ophyd >=1.5.3
+    - ophyd >=1.6.0
     - oscars
     - papermill
     - peakutils
@@ -95,7 +96,7 @@ requirements:
     - suitcase-csv
     - suitcase-json-metadata
     - suitcase-jsonl
-    - suitcase-mongo
+    - suitcase-mongo >=0.3.0
     - suitcase-msgpack
     - suitcase-specfile
     - suitcase-tiff
@@ -150,8 +151,8 @@ test:
     - check-results -t channels -f conda-forge  # [not osx]
     # Fail if versions of the packages are not as expected minimum ones.
     - check-results -t version -p bluesky    -e 1.6
-    - check-results -t version -p databroker -e 1.0
-    - check-results -t version -p ophyd      -e 1.5
+    - check-results -t version -p databroker -e 1.2
+    - check-results -t version -p ophyd      -e 1.6
     - python -V
     - ipython -V
     - napari --help
