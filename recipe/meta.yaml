@@ -1,7 +1,7 @@
 {% set name = "analysis" %}
 {% set year = "2021" %}
 {% set cycle = "1" %}
-{% set version = "0" %}
+{% set version = "1" %}
 {% set micro = "" %}
 
 package:
@@ -37,6 +37,7 @@ requirements:
     - fabio
     - ffmpeg >=4.0
     - flake8
+    - globus-sdk
     - graphviz
     - grid-strategy
     - h5py >=2.9.0
@@ -47,6 +48,7 @@ requirements:
     - ipython
     - ipywidgets ==7.2.1
     - isort
+    - jedi <0.18
     - jupyter
     - jupyterlab
     - line_profiler
