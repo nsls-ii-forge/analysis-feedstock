@@ -1,7 +1,7 @@
 {% set name = "analysis" %}
 {% set year = "2021" %}
 {% set cycle = "1" %}
-{% set version = "1" %}
+{% set version = "2" %}
 {% set micro = "" %}
 
 package:
@@ -48,7 +48,7 @@ requirements:
     - ipython
     - ipywidgets ==7.2.1
     - isort
-    - jedi <0.18
+    - jedi <0.18  # TODO: unpin it once ipython 7.20 is in defaults (released on 2021-02-01)
     - jupyter
     - jupyterlab
     - line_profiler
@@ -109,8 +109,6 @@ requirements:
     - tornado
     - tqdm
     - tzlocal >=1.5
-    - xlrd
-    - xlwt
     - xray-vision
     - xraylarch
 
