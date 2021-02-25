@@ -10,7 +10,7 @@ package:
 
 build:
   skip: True  # [py<36]
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -45,10 +45,10 @@ requirements:
     - inflection
     - ipykernel
     - ipympl ==0.1.1
-    - ipython
+    - ipython >=7.20.0
     - ipywidgets ==7.2.1
     - isort
-    - jedi <0.18  # TODO: unpin it once ipython 7.20 is in defaults (released on 2021-02-01)
+    - jedi
     - jupyter
     - jupyterlab
     - line_profiler
