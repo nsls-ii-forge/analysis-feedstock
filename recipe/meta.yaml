@@ -10,7 +10,7 @@ package:
 
 build:
   skip: True  # [py<36]
-  number: 1
+  number: 2
 
 requirements:
   host:
@@ -41,7 +41,8 @@ requirements:
     - graphviz
     - grid-strategy
     - h5py >=2.9.0
-    - hdf5-lz4  # [not win]
+    - hdf5-external-filter-plugins-bitshuffle
+    - hdf5-external-filter-plugins-lz4
     - inflection
     - ipykernel
     - ipympl ==0.1.1
