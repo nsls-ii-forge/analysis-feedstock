@@ -9,7 +9,7 @@ package:
   version: {{ year }}C{{ cycle }}.{{ version }}{{ micro }}
 
 build:
-  skip: True  # [py<36]
+  skip: True  # [py<36 or not linux]
   number: 2
 
 requirements:
@@ -45,9 +45,9 @@ requirements:
     - hdf5-external-filter-plugins-lz4
     - inflection
     - ipykernel
-    - ipympl ==0.1.1
+    - ipympl
     - ipython >=7.20.0
-    - ipywidgets ==7.2.1
+    - ipywidgets
     - isort
     - jedi
     - jupyter
@@ -106,7 +106,7 @@ requirements:
     - suitcase-utils
     - sympy
     - toml
-    - tomopy
+    # - tomopy
     - tornado
     - tqdm
     - tzlocal >=1.5
