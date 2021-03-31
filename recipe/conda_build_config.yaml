@@ -4,9 +4,19 @@ channel_targets:
   - nsls2forge main
 cdt_name:
   - cos6
+c_compiler_version:    # [linux]
+  - 7                  # [linux]
+cxx_compiler_version:  # [linux]
+  - 7                  # [linux]
 numpy:
+# - 1.16
+  - 1.16
   - 1.16
 python:
-  - 3.7
+# - 3.7
+  - 3.8
+  - 3.9
 python_impl:
+# - cpython
+  - cpython
   - cpython

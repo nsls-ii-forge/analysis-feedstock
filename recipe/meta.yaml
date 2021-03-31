@@ -9,7 +9,7 @@ package:
   version: {{ year }}C{{ cycle }}.{{ version }}{{ micro }}
 
 build:
-  skip: True  # [py<36]
+  skip: True  # [py<36 or not linux]
   number: 2
 
 requirements:
