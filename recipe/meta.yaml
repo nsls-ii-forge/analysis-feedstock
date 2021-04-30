@@ -10,7 +10,7 @@ package:
 
 build:
   skip: True  # [py<36]
-  number: 2
+  number: 3
 
 requirements:
   host:
@@ -161,7 +161,10 @@ test:
     - napari --help
     - napari --version
     - nexpy --help
+    # Test reading the newer format .xlsx with pandas/openpyxl:
     - python -c "import pandas; print(pandas.read_excel('test.xlsx'))"
+    # Test reading the old format .xls with pandas/xlrd:
+    - python -c "import pandas; print(pandas.read_excel('test.xls'))"
 
 about:
   home: https://nsls-ii.github.io/deployment_docs.html
