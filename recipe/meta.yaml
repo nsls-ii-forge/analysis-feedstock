@@ -44,6 +44,7 @@ requirements:
     - hdf5-external-filter-plugins-bitshuffle
     - hdf5-external-filter-plugins-lz4
     - inflection
+    - intel-openmp
     - ipykernel
     - ipympl ==0.1.1
     - ipython >=7.20.0
@@ -66,7 +67,6 @@ requirements:
     - nodejs
     - numexpr
     - numpy >=1.14.0
-    - openmp
     - openpyxl
     - ophyd >=1.6.0
     - oscars
