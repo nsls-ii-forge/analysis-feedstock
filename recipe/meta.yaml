@@ -66,6 +66,7 @@ requirements:
     - nodejs
     - numexpr
     - numpy >=1.14.0
+    - openmp
     - openpyxl
     - ophyd >=1.6.0
     - oscars
