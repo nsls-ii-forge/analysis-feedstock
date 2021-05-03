@@ -44,7 +44,7 @@ requirements:
     - hdf5-external-filter-plugins-bitshuffle
     - hdf5-external-filter-plugins-lz4
     - inflection
-    - intel-openmp
+    - intel-openmp =2019.4
     - ipykernel
     - ipympl ==0.1.1
     - ipython >=7.20.0
@@ -59,6 +59,7 @@ requirements:
     - matplotlib >=3.1.0
     - memory_profiler
     - mendeleev
+    - mkl =2019.4
     - modestimage
     - napari >=0.3.7
     - natsort
