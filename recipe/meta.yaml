@@ -112,6 +112,7 @@ requirements:
     - tornado
     - tqdm
     - tzlocal >=1.5
+    - xlrd
     - xray-vision
     - xraylarch
 
