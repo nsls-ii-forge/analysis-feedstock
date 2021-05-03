@@ -151,6 +151,7 @@ test:
     - xray_vision
   files:
     - test.xlsx
+    - test.xls
   commands:
     # Fail if the "conda-forge" channel is in the list of channels.
     - check-results -t channels -f conda-forge  # [not osx]
