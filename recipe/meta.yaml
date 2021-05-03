@@ -113,6 +113,7 @@ requirements:
     - tqdm
     - tzlocal >=1.5
     - xlrd
+    - xlwt
     - xray-vision
     - xraylarch
 
