@@ -10,7 +10,7 @@ package:
 
 build:
   skip: True  # [py<36]
-  number: 2
+  number: 3
 
 requirements:
   host:
@@ -44,6 +44,7 @@ requirements:
     - hdf5-external-filter-plugins-bitshuffle
     - hdf5-external-filter-plugins-lz4
     - inflection
+    - intel-openmp =2019.4
     - ipykernel
     - ipympl ==0.1.1
     - ipython >=7.20.0
@@ -58,6 +59,7 @@ requirements:
     - matplotlib >=3.1.0
     - memory_profiler
     - mendeleev
+    - mkl =2019.4
     - modestimage
     - napari >=0.3.7
     - natsort
@@ -110,6 +112,8 @@ requirements:
     - tornado
     - tqdm
     - tzlocal >=1.5
+    - xlrd
+    - xlwt
     - xray-vision
     - xraylarch
 
@@ -149,6 +153,7 @@ test:
     - xray_vision
   files:
     - test.xlsx
+    - test.xls
   commands:
     # Fail if the "conda-forge" channel is in the list of channels.
     - check-results -t channels -f conda-forge  # [not osx]
@@ -161,7 +166,10 @@ test:
     - napari --help
     - napari --version
     - nexpy --help
+    # Test reading the newer format .xlsx with pandas/openpyxl:
     - python -c "import pandas; print(pandas.read_excel('test.xlsx'))"
+    # Test reading the old format .xls with pandas/xlrd:
+    - python -c "import pandas; print(pandas.read_excel('test.xls'))"
 
 about:
   home: https://nsls-ii.github.io/deployment_docs.html

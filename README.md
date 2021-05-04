@@ -73,6 +73,7 @@ Installing `analysis` from the `nsls2forge` channel can be achieved by adding `n
 
 ```
 conda config --add channels nsls2forge
+conda config --set channel_priority strict
 ```
 
 Once the `nsls2forge` channel has been enabled, `analysis` can be installed with:
