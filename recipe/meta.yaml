@@ -85,7 +85,7 @@ requirements:
     - pyqt >=5.9.0
     - pystackreg
     - python-graphviz
-    - pyxrf >=1.0.0
+    - pyxrf >=1.0.5
     - pyzbar  # [not win]
     - qt >=5.9.0
     - redis-py
