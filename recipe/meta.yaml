@@ -1,16 +1,20 @@
 {% set name = "analysis" %}
 {% set year = "2021" %}
-{% set cycle = "1" %}
-{% set version = "2" %}
+{% set cycle = "2" %}
+{% set version = "0" %}
 {% set micro = "" %}
+
+# Special pins:
+{% set dask_pin = "2021.4.0" %}
+{% set mkl_pin = "2019.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ year }}C{{ cycle }}.{{ version }}{{ micro }}
 
 build:
-  skip: True  # [py<36]
-  number: 3
+  skip: true  # [py<36]
+  number: 0
 
 requirements:
   host:
@@ -28,10 +32,13 @@ requirements:
     - bluesky-live
     - boto3
     - conda-pack
-    - dask
+    # TODO: check that the latest 'distributed' package works with the latest
+    # 'dask' package. Currently we are pinning the both libraries to have the
+    # same version.
+    - dask ={{ dask_pin }}
     - databroker >=1.2.0
     - databroker-pack
-    - distributed
+    - distributed ={{ dask_pin }}
     - doi2bib
     - event-model >=1.17.0
     - fabio
@@ -44,7 +51,7 @@ requirements:
     - hdf5-external-filter-plugins-bitshuffle
     - hdf5-external-filter-plugins-lz4
     - inflection
-    - intel-openmp =2019.4
+    - intel-openmp ={{ mkl_pin }}
     - ipykernel
     - ipympl ==0.1.1
     - ipython >=7.20.0
@@ -56,10 +63,10 @@ requirements:
     - line_profiler
     - lmfit
     - lxml
-    - matplotlib >=3.1.0
+    - matplotlib >=3.1.0,!=3.3.*
     - memory_profiler
     - mendeleev
-    - mkl =2019.4
+    - mkl ={{ mkl_pin }}
     - modestimage
     - napari >=0.3.7
     - natsort
@@ -85,7 +92,7 @@ requirements:
     - pyqt >=5.9.0
     - pystackreg
     - python-graphviz
-    - pyxrf >=1.0.0
+    - pyxrf >=1.0.5
     - pyzbar  # [not win]
     - qt >=5.9.0
     - redis-py
